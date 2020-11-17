@@ -1,0 +1,202 @@
+///////////    max-width 1200px
+@media (max-width: 1200px) {
+    #global_section{    
+        background-position: -180px 0;
+    }
+}
+
+  ///////////    max-width 991px
+@media ( max-width: 991px) {
+// Profile Section Css Start
+#profile_section{    
+    .profile_img{
+        img{
+            max-width: 300px;
+            margin-left: 3rem;
+           
+        }
+    }
+}
+// Profile Section Css End
+
+// Global Section Css Start
+#global_section{    
+    background-position: -220px 0;
+    h3{
+        font-size: 1.25rem;
+    }
+    p{
+        font-size: 0.90rem;
+    }
+}
+// Global Section Css End
+
+// Price & Plan Section Css Start
+#price_plan_section{
+    h3{
+        font-size: 1.5rem;
+    }
+    .price_plan_row{
+        .price_plan{
+        ul{
+            li{
+                h4{
+                    font-size: 3rem;                    
+                    strong{
+                        font-size: 0.775rem;
+                    }
+                }
+                button{
+                    font-size: .9rem;
+                }
+                
+            }
+        }
+           
+        }
+    }
+    
+}
+// Price & Plan Section Css End
+
+}
+
+///////////    max-width 767px
+@media (max-width: 767px) {
+    #feature_section{
+        .row{
+            .feature_header{
+                h2{
+                    font-weight: 400;
+                    font-size: 1.75rem;
+                }
+            }
+        }
+    }
+
+
+    #app_section{
+        background: none;
+        background-color: #EDF1EB;
+       
+        h3{
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: .9rem;
+        }
+    }
+
+    // Profile Section Css Start
+    #profile_section{    
+    .profile_img{
+        display: none;
+    }
+}
+// Profile Section Css End
+// Global Section Css Start
+#global_section{
+    background: none;    
+    background: #E7EDE7;
+    height: 400px;
+}
+// Global Section Css End
+
+
+
+// Price & Plan Section CssPrice & Plan
+#price_plan_section{  
+    .price_plan_row{
+        .price_plan{
+            border: 1px solid #D0DEDC;
+        }
+    }
+    
+}
+// Price & Plan Section Css End
+}
+
+// Download Section Css Start
+#download_section{
+    h4{
+        font-size: 1.2rem;
+    }
+    button{
+        font-size: .8rem;
+    }
+}
+// Download Section Css End
+
+
+
+
+
+
+///////////    max-width 575px
+@media (max-width: 575px) {
+    // Price & Plan Section
+#price_plan_section{
+    .price_plan_row{
+        .price_plan{
+        ul{
+            li{
+                h4{
+                    font-size: 2rem;
+                    strong{
+                        font-size: 0.8rem;
+                    }
+                }
+                
+            }
+        }
+           
+        }
+    }
+    
+}
+// Price & Plan Section Css End
+ 
+}
+
+
+
+///////////    max-width 468px
+  @media (max-width: 468px) {
+    .container, .container-sm {
+        max-width: 420px;
+      }
+
+    #headerArea{
+        .row{
+            .col{
+                
+                .header_text_area{
+                    top: 30vh;
+                    transform: translateY(-50%);
+
+                    h3{
+                        font-size: 1.50rem;
+                    }
+                    p{
+                        font-size: 0.90rem;
+                    }
+                }
+            }
+        }    
+    
+    
+    }
+    // Price & Plan Section CssPrice & Plan
+#price_plan_section{    
+    .plans{
+        ul{
+            li{
+                font-size: .8rem;
+            }
+        }
+    }
+}
+// Price & Plan Section Css End
+
+
+  }

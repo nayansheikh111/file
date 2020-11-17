@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: white;
+  color: #0f5f5cd2;
+}
+
+/*===========================
+Scrool Bar CSS
+=============================*/
+html {
+  --scrollbarBG: #ecdede;
+  --thumbBG: #0f5f5cd2;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+/*===========================
+Scrool Bar CSS
+=============================*/
+.header_bottom_shape_style {
+  background: #6FB048;
+  height: 2px;
+  width: 70px;
+  display: block;
+}
+
+#headerArea {
+  color: #fff;
+  background-image: url(../img/header_section_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  min-height: 500px;
+  position: relative;
+}
+
+#headerArea .row {
+  align-items: center;
+  min-height: 500px;
+}
+
+#headerArea .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #0f5f5cd2;
+}
+
+#feature_section .row .feature_header h2 {
+  font-weight: 400;
+}
+
+#feature_section .row .col h3 {
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+#feature_section .child_feature_area .child_feature .child_feature_header li h3 {
+  font-size: 1rem;
+}
+
+#feature_section .child_feature_area .child_feature p {
+  font-size: .8rem;
+}
+
+#app_section {
+  background: url(../img/app/app.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  max-height: 660px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+#profile_section h3 {
+  font-size: 1.37rem;
+  font-weight: 400;
+  color: #83a7a5;
+}
+
+#profile_section p {
+  margin: 0;
+  font-size: .87rem;
+}
+
+#profile_section .profile_client_name {
+  color: #6fb048;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+#profile_section .profile_img img {
+  max-width: 400px;
+  margin-left: 3rem;
+}
+
+#global_section {
+  background: url(../img/global/global_bg.png);
+  background-size: cover;
+  background-position: -100px 0;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+#global_section .row {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#global_section .row .col h3 {
+  color: 0f5f5c;
+  font-weight: 400;
+}
+
+#global_section .row .col p {
+  color: #83a7a5;
+  font-size: 0.8rem;
+}
+
+#price_plan_section h3 {
+  font-weight: 400;
+}
+
+#price_plan_section .price_plan_row .price_plan {
+  border: 1px solid #D0DEDC;
+}
+
+#price_plan_section .price_plan_row .price_plan ul li {
+  line-height: 2rem;
+}
+
+#price_plan_section .price_plan_row .price_plan ul li p {
+  margin: 0;
+  font-size: 0.93rem;
+  font-weight: 700;
+  color: #6FB048;
+}
+
+#price_plan_section .price_plan_row .price_plan ul li h4 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+#price_plan_section .price_plan_row .price_plan ul li h4 strong {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-top: -5px;
+  display: block;
+}
+
+#price_plan_section .price_plan_row .plus_plan {
+  border-left: none;
+  border-right: none;
+}
+
+#price_plan_section .price_plan_row .plans h4 {
+  font-weight: 400;
+}
+
+#help_section .row .col h4 {
+  color: #6FB048;
+}
+
+#help_section .row .col a {
+  font-weight: 700;
+  color: #0f5f5cd2;
+}
+
+#download_section {
+  background: url(../img/app/app_download_section_bg.png);
+}
+
+#footer_section .row .col h5 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+#footer_section .row .col ul li a {
+  text-decoration: none;
+}
+
+#footer_section .row .col ul li a:first-child {
+  color: #0f5f5cd2;
+  font-weight: 700;
+  font-size: 0.8125rem;
+}
+
+#spece_section {
+  height: 300px;
+  background: #666;
+}

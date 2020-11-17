@@ -1,0 +1,295 @@
+$primary-color: #0f5f5cd2;
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(255, 255, 255);
+    color: $primary-color ;
+   
+    
+}
+
+/*===========================
+Scrool Bar CSS
+=============================*/
+html {
+    --scrollbarBG: #ecdede;
+    --thumbBG: #0f5f5cd2;
+  }
+  body::-webkit-scrollbar {
+    width: 15px;
+  }
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+  }
+/*===========================
+Scrool Bar CSS
+=============================*/
+
+// Common Css
+.header_bottom_shape_style{
+    background: #6FB048;
+    height: 2px;
+    width: 70px;
+    display: block;
+    
+}
+
+
+// Common Css
+// Header Section Css Start
+#headerArea{
+    color: #fff;
+    background-image: url(../img/header_section_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;                
+    min-height: 500px;     
+    position: relative;    
+
+    .row{
+        align-items: center;
+        min-height: 500px;
+    }    
+
+// overlay
+    .overlay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: $primary-color;
+    }
+}
+// Header Section Css Start
+// Feature Section Css Start
+#feature_section{
+    .row{
+        .feature_header{
+            h2{
+                font-weight: 400;
+            }
+        }
+        .col{
+            h3{
+                font-size: 1.15rem;
+                font-weight: 500;
+            }
+        }
+    }
+    .child_feature_area{
+            .child_feature{
+               .child_feature_header{
+                li{
+                    h3{
+                        font-size: 1rem;
+                    }
+                }
+               }
+            p{
+                   font-size: .8rem;
+               }
+            }
+        
+    }
+}
+// Feature Section Css End
+
+// App Section Css Start
+#app_section{
+    background: url(../img/app/app.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    max-height: 660px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    
+}
+// App Section Css End
+
+// Profile Section Css Start
+#profile_section{
+    h3{
+        font-size: 1.37rem;
+        font-weight: 400;
+        color: #83a7a5;
+    }
+    p{
+        margin: 0;
+        font-size: .87rem;
+    }
+    .profile_client_name{
+        color: #6fb048;
+        font-weight: bold;
+        margin-top: 1rem;
+    }
+    .profile_img{
+        img{
+            max-width: 400px;
+            margin-left: 3rem;
+           
+        }
+    }
+}
+
+// Profile Section Css End
+
+// Globle Section Css Start
+#global_section{
+    background:url(../img/global/global_bg.png);
+    background-size: cover;
+    background-position: -100px 0;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    .row{
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        .col{
+           
+            h3{
+                color: 0f5f5c;
+                // font-size: 2rem;
+                font-weight: 400;
+            }
+            p{
+                color: #83a7a5;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+// Globle Section Css End
+
+// Price & Plan Section CssPrice & Plan
+#price_plan_section{    
+    h3{
+        font-weight: 400;
+    }
+    .price_plan_row{
+        .price_plan{
+            border: 1px solid #D0DEDC;
+        ul{
+            li{
+                line-height: 2rem;
+                p{
+                    margin: 0;
+                    font-size: 0.93rem;
+                    font-weight: 700;
+                    color: #6FB048;
+                }
+                h4{
+                    font-size: 4rem;
+                    font-weight: 600;
+                    margin: 0;
+                    strong{
+                        font-size: 0.875rem;
+                        font-weight: 700;
+                        margin-top: -5px;
+                        display: block;
+                    }
+                }
+                
+            }
+        }
+           
+        }
+        .plus_plan{
+            border-left: none;
+            border-right: none;
+        }
+        .plans{
+            h4{
+                font-weight: 400;
+            }
+        }
+    }
+    
+}
+// Price & Plan Section Css End
+
+// Price & Plan Section Css Start
+#help_section{
+    .row{
+        .col{
+            h4{
+                color: #6FB048;
+            }
+            a{
+                font-weight: 700;
+                color: $primary-color;
+            }
+        }
+    }
+}
+// Price & Plan Section Css End
+
+// Download Section Css Start
+#download_section{
+    background: url(../img/app/app_download_section_bg.png);
+}
+// Download Section Css End
+
+// Footer Section Css Start
+#footer_section{
+    .row{
+        .col{
+            h5{
+                font-size: 1.375rem;
+                font-weight: 700;
+                margin: 0;
+            }
+            ul{
+                li{
+                    
+                    a{
+                        text-decoration: none;
+                        &:first-child{
+                            color: $primary-color;
+                            font-weight: 700;
+                            font-size: 0.8125rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Footer Section Css End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#spece_section{
+    height: 300px;
+    background: #666;
+}
