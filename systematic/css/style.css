@@ -1,0 +1,765 @@
+/*===========================
+Font
+=============================*/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+
+
+body{
+    color: #666;
+    font-family:Georgia,sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 0;
+    box-sizing: border-box;
+    
+
+}
+/*===========================
+Scrool Bar CSS
+=============================*/
+html {
+    --scrollbarBG: #ecdede;
+    --thumbBG: #ba2e1f;
+  }
+  body::-webkit-scrollbar {
+    width: 15px;
+  }
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+  }
+  
+/*===========================
+Loader CSS
+=============================*/
+.loader-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300%;
+    background-color: #042429;
+    z-index: 99999999999999999;
+
+    
+  }
+  .loader-box .loader{
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translate(-15% , -50%);
+      
+  }
+
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+    width: 96%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.aligenleft{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+}
+.aligenright{
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+
+}
+
+.aligencenter{
+    display: block;
+    margin: 0 auto 15px;
+
+}
+input , textarea{
+    outline: none;
+}
+
+
+/*===========================
+Top Header CSS
+=============================*/
+.header_area{
+    width: 100%;
+    clear: both;
+}
+#top_header_area{
+    background: #ba2e1f;
+    padding: 15px 0;
+    width: 100%;
+
+}
+.inner_top_header{
+    overflow: hidden;
+
+}
+.mini_menu{
+    padding-top: 5px;
+    float: left;
+    width: 70%;
+}
+.mini_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+.mini_menu ul li{
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+
+}
+.mini_menu ul li::after{
+    background: #fff;
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: -10px;
+    height: 12px;
+    width: 1px;
+
+
+}
+.mini_menu ul li:last-child::after{
+    display: none;
+}
+.mini_menu ul li a{
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+}
+.search_area{
+float: right;
+width: 30%;
+padding-top: 8px;
+
+}
+.search_area form{
+    background:#fff;
+    border-radius: 25px;
+    float: right;
+    padding: 2%;
+    max-width: 210px;
+    width: 96%;
+    display: flex;
+    
+    
+}
+.search_area input{
+border: none;
+padding: 1%;
+color: #000;
+width: 90%;
+
+
+}
+.search_area input:focus{
+border-bottom: 1px solid #777;
+
+}
+/* serarch icon */
+.searchButton{
+    border: none;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0);
+    font-size: 12px;
+
+
+
+}
+.searchButton i{
+    transition: .5s ease;
+    color: #fff;
+    background: #b92d1f;
+    padding: 6px;
+    border-radius: 50%;
+    
+}
+.searchButton i:hover{
+    transform: rotate(360deg);
+}
+
+/*===========================
+Main Header CSS
+=============================*/
+.main_header_area{
+    width: 100%;
+    clear: both;
+}
+.inner_header{
+    padding: 40px 0;
+    overflow: hidden;
+}
+.logo_area{
+    float: left;
+    width: 240px;
+}
+.logo_area:hover .logo{
+    
+}
+
+.social_area{
+    float: right;
+    max-width: 600px;
+    width: 100%;
+    padding-top: 20px;
+}
+.social_area ul{    
+margin: 0;
+padding: 0;
+list-style: none;
+text-align: right;
+}
+.social_area ul li{
+    display: inline-block;
+    margin-left: 20px;
+
+}
+.social_area ul li a{
+    display: block;
+    text-decoration: none;
+}
+.social_area ul li i{
+    background-color: #333;
+    border-radius: 50%;
+    display: block;
+    text-decoration: none;
+    width: 35px;
+    padding-top: 8px;
+    color: #fff;
+    height: 25px;
+    text-align: center;
+        
+    
+}
+.social_area ul li a:hover i{
+    background: #ba2e1f;
+    transition: 1s;
+    transform: rotate(360deg);
+}
+.social_area ul li a:hover i.fa-linkedin-in{
+    background: #0174b0; 
+}
+.social_area ul li a:hover i.fa-twitter{
+    background: #41B7E5; 
+}
+.social_area ul li a:hover i.fa-facebook-f{
+    background: #0174b0; 
+}
+.social_area ul li a:hover i.fa-pinterest{
+    background: #DE2A32; 
+}
+.social_area ul li a:hover i.fa-google-plus-g{
+    background: #D64134; 
+}
+.social_area ul li a:hover i.fa-rss{
+    background: #ee802f; 
+}
+/*===========================
+Main Menu CSS
+=============================*/
+#main_menu{
+    width: 100%;
+    clear: both;
+}
+
+.inner_menu{
+    background: #333;
+    position: relative;
+    min-height: 30px;
+    border-radius: 5px;
+    padding: 15px 0;
+    z-index: 1;
+    }
+    
+.inner_menu::after{
+    background: #2b2b2b;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    content: "";
+    z-index: -1;
+    }
+
+#main_menu ul{
+margin: 0;
+padding: 0;
+list-style: none;
+text-align: center;
+}
+#main_menu ul li{
+display: inline-block;
+margin: 0 5px;
+position: relative;
+
+}
+#main_menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+#main_menu ul li a:hover{
+    color: #ba2e1f;
+}
+#main_menu ul li:hover a{
+    color: #ba2e1f;
+}
+#main_menu ul li:hover ul li a{
+    color: #fff;
+}
+/*Dropdown Style*/
+#main_menu ul ul{
+    position: absolute;
+    background:#ba2e1f;
+    width: 180px;
+    left: -999999px;
+    top: 33px;
+    z-index: 9;
+}
+#main_menu ul li:hover ul{
+    
+    left: 0px;
+}
+#main_menu ul li:hover ul ul{
+    
+    left: -99999px;
+}
+#main_menu ul ul li:hover ul{
+    
+    left: 180px;
+}
+#main_menu ul ul li{
+    margin: 0;
+    display: block;
+}
+#main_menu ul ul li a{
+    
+}
+#main_menu ul ul a:hover{
+    color: #fff;
+    background:#333;
+}
+#main_menu ul ul li:hover a{
+    color: #fff;
+    background:#333;
+}
+#main_menu ul ul li:hover ul li a{
+    color: none;
+    background: #ba2e1f;}
+#main_menu ul ul li ul li a:hover{
+    color: #fff;
+    background: #333;
+}
+#main_menu ul ul ul{
+    left: -99999px;
+    top: 0px;
+   
+
+}
+
+
+/*===========================
+Slider CSS
+=============================*/
+#slider_area{
+    margin-top: 20px;
+}
+.item{
+    position: relative;
+}
+.slider_caption{
+position: absolute;
+width: 100%;
+top: 90%;
+left: 50%;
+text-align: center;
+transform: translate(-50%,-50%);
+}
+.slider_caption h1{
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+}
+
+
+/*===========================
+Hero Area CSS
+=============================*/
+#hero_area{
+    background:#fff;
+    margin: 0;
+    padding: 0;
+
+}
+.inner_hero img{
+    max-width: 400px;
+}
+.inner_hero{
+    overflow: hidden;
+}
+.inner_hero h2{
+    color: #000;
+    font-size: 66px;
+    line-height: 1em;
+    font-weight: normal;
+    margin-bottom: 15px;
+
+}
+.inner_hero p{
+    color: #666;
+    font-size: 16px;
+    font-weight: normal;
+    overflow: hidden;
+    
+}
+.inner_hero a{
+    float: right;
+    color: #ba2e1f;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+.inner_hero a:hover{
+    color: #000;
+
+}
+/*===========================
+Work Area CSS
+=============================*/
+#work_area{
+    background:#fff;
+    overflow: hidden;
+
+}
+.inner_work{
+    
+
+}
+.child_work{
+    width: 31.33%;
+    float: left;
+    margin: 0 1% 10px;
+    
+}
+.child_work h2{
+    color: #333;
+    font-size: 26px;
+    font-weight: normal;
+    
+}
+.child_work p{
+    color: #878787;
+    font-size: 14px;
+    font-weight: normal;
+    
+}
+.child_work a{
+    color: #b92d1f;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    clear: both;
+    float: right;
+    display: inline-block;
+    
+}
+.child_work a:hover{
+    color: #262626;
+}
+.about_area{
+    margin-left: 0;
+}
+.about_area img{
+    border: 1px solid #dfdfdf;
+    padding: 5px;
+    display: block;
+    margin-bottom: 15px;
+    max-width: 95%;
+
+}
+
+.service_area{
+
+}
+.child_service{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.child_service .service_img{
+    width: 21%;
+    float: left;
+    margin-right: 4%;
+    margin-top: 5px;
+
+
+}
+.child_service .service_text{
+    width: 75%;
+    float: right;
+}
+.child_service .service_text h3{
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+.child_service .service_text p{
+    
+    margin-top: 0;
+    line-height: 1.4em;
+
+    margin-bottom: 0px;
+}
+    
+
+.testimonial_area{
+    margin-right: 0;
+}
+.child_testimonial{
+    width: 100%;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.child_testimonial h3{
+    color: #989898;
+    font-size: 16px;
+    font-weight: bold;
+    background-image: url(../img/composite_path.png);
+    background-repeat: no-repeat;
+    padding: 15px 0px 15px 65px;
+}
+/*
+.child_testimonial strong{
+    font-size: 50px;
+    font-family: 'Passion One', cursive;
+    line-height: 2em;
+    
+}*/
+/*===========================
+Footer Area CSS
+=============================*/
+#footer_area{
+    background-color:#ddd;
+    padding: 45px 0;
+ 
+    
+
+}
+.inner_footer{
+    overflow: hidden;
+    
+}
+.child_footer{
+    width:21% ;
+    padding: 1%;
+    margin: 0 1% 10px;
+    float: left;
+    
+}
+.child_footer h3{
+    border-top: 1px solid #666;
+    color: #222;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 0;
+    padding-top: 5px;
+}
+.child_footer h4{
+    color: #666;
+    font-size: 14px;
+    margin-top: 0px;
+}
+.child_footer h4 a{
+    color: #666;
+    text-decoration: none;
+}
+.child_footer h4 a:hover{
+    color: #b92d1f;
+}
+.child_footer h6{
+    margin: 0 0 10px;
+    font-size: 12px;
+    line-height: 1.3em;
+}
+.child_footer p{
+    color: #666;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+.child_footer p a{
+    color: #b92d1f;
+    text-decoration: none;
+}
+.child_footer ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.child_footer ul ul{
+    display: none;
+}
+.child_footer li{
+    background:url(../img/arrow.png) no-repeat center left;
+    display: block;
+    border-bottom: 1px solid #666;
+}
+.child_footer li:last-child{
+    border-bottom: 0px solid;
+}
+.child_footer li a{
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+}
+.child_footer li a:hover{
+    color: #b92d1f;
+}
+.child_footer a{
+    color: #b92d1f;
+    text-decoration: none;
+}
+.child_footer a:hover{
+    color: #000;
+}
+.child_blog{
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.child_footer .child_blog h4 a{
+   float: none;
+}
+.child_blog a{
+   float: right;
+}
+
+.child_footer input{
+    width: 100%;
+    padding:10px;
+    margin-bottom: 10px;
+    border: 0px solid;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+}
+.child_footer input[type=submit]{
+    color: #b92d1f;
+    width: 50%;
+    cursor: pointer;
+
+}
+.child_footer input[type=submit]:hover{
+    color: #fff;
+    background: #b92d1f;
+    transition: 0.5s;
+}
+.child_footer textarea{
+    width: 90%;
+    padding:10px 5%;
+    margin-bottom: 10px;
+    border: 0px solid;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+
+    
+
+}
+.child_footer ::placeholder{
+    font-size: 16px;
+    font-family: arial,sans-serif;
+
+}
+/*===========================
+Protflio Section area CSS
+=============================*/
+
+#protflio_section{
+    padding: 8rem 0;
+    background: rgb(65, 60, 60);
+
+}
+#protflio_section .protflio{
+    padding: 4rem 2rem;
+    border-radius: 44px;
+    background: #f5f2f2;
+    /* box-shadow:  26px 26px 52px #b6bcbf, 
+                 -26px -26px 52px #f6feff; */
+
+}
+#protflio_section .protflio .img-area{
+    width: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+
+
+}
+#protflio_section .protflio .img-area img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    float: right;
+
+}
+#protflio_section .protflio .info_area{
+    width: 46%;
+    float: right;
+    padding: 2%;
+    line-height: 0.9rem;
+
+}
+#protflio_section .protflio .info_area i{
+    padding:0 8px;
+}
+#protflio_section .protflio .info_area h2{
+    color: rgb(19, 18, 18);
+}
+#protflio_section .protflio .info_area h4{
+    color: rgb(36, 34, 34);
+}
+
+
+
+
+
+/*===========================
+Top Scrolling Button CSS
+=============================*/
+#top_scroll_button{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    background: #b92d1f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+}

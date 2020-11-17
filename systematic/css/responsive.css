@@ -1,0 +1,135 @@
+/*Tablet Layout*/
+@media only screen and (min-width:200px) and (max-width:991px){
+
+    .social_area{
+        max-width: 460px;
+        padding-top: 14px;
+    }
+.mean-container .mean-nav{
+    margin-top: 0;
+    width: 80%;
+}
+.inner_header{
+    padding: 20px 0;
+}
+#slider_area{
+    margin-top: 0;
+}
+.inner_hero h2{
+    font-size: 55px;
+}
+}
+
+/*Tablet Layout*/
+@media(max-width:768px){
+    /* .container{
+        margin: 0 5%;
+
+    } */
+
+    .inner_menu{
+        background: none;
+        min-height: auto;
+    }
+    .inner_menu::after{
+        display: none;
+        }
+
+
+    .mini_menu{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .mini_menu ul, .social_area ul{
+        text-align: center;
+    }
+    .search_area, .logo_area{
+        float: none;
+        width: 250px;
+        margin: 0 auto;
+    }
+    .social_area ul li{
+        margin: 0 5px;
+        
+    }
+    .inner_hero{
+        overflow: hidden;
+        padding-bottom: 20px;
+        }
+    .inner_hero h2{
+        font-size: 25px;
+    }
+#work_area, .footer_area{
+        padding: 20px 0;
+    }
+.child_work{
+    width: 98%;
+}
+.child_footer{
+    width: 96%;
+}
+
+
+/*===========================
+Protflio Section area CSS
+=============================*/
+
+#protflio_section{
+    padding: 8rem 0;
+    background: rgb(65, 60, 60);
+
+}
+#protflio_section .protflio{
+    padding: 1rem;
+    border-radius: 30px;
+    background: #f5f2f2;
+    /* box-shadow:  26px 26px 52px #b6bcbf, 
+                 -26px -26px 52px #f6feff; */
+
+}
+#protflio_section .protflio .img-area{
+    width: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+
+
+}
+#protflio_section .protflio .img-area img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    float: right;
+
+}
+#protflio_section .protflio .info_area{
+    padding: 0%;
+    line-height: 0.8rem;
+
+}
+#protflio_section .protflio .info_area i{
+    padding:0 8px;
+}
+#protflio_section .protflio .info_area h2{
+    color: rgb(19, 18, 18);
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 8px;
+
+}
+#protflio_section .protflio .info_area h4{
+    font-size: 14px;
+    margin: 0;
+    font-weight: 500;
+
+}
+#protflio_section .protflio .info_area p{
+    font-size: 12px;
+}
+#protflio_section .protflio .info_area address{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+}
