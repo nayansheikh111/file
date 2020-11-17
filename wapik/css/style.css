@@ -56,6 +56,7 @@ Scrool Bar CSS
   overflow: hidden;
   min-height: 500px;
   position: relative;
+  z-index: 1;
 }
 
 #headerArea .row {
@@ -68,6 +69,11 @@ Scrool Bar CSS
   height: 100%;
   position: absolute;
   background: #0f5f5cd2;
+  z-index: -1;
+}
+
+#headerArea .fixed-top {
+  background-color: #0f5f5c;
 }
 
 #feature_section .row .feature_header h2 {

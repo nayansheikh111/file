@@ -61,6 +61,7 @@ Scrool Bar CSS
     overflow: hidden;                
     min-height: 500px;     
     position: relative;    
+    z-index: 1;
 
     .row{
         align-items: center;
@@ -73,6 +74,10 @@ Scrool Bar CSS
         height: 100%;
         position: absolute;
         background: $primary-color;
+        z-index: -1;
+    }
+    .fixed-top{
+        background-color: #0f5f5c;
     }
 }
 // Header Section Css Start

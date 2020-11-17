@@ -81,10 +81,6 @@
   .container, .container-sm {
     max-width: 420px;
   }
-  #headerArea .row .col .header_text_area {
-    top: 30vh;
-    transform: translateY(-50%);
-  }
   #headerArea .row .col .header_text_area h3 {
     font-size: 1.50rem;
   }
