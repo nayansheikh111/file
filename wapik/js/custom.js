@@ -1,3 +1,7 @@
+// Loader
+$(window).on('load',function() {
+  $('.loader-box').fadeOut();
+});
 
 // wow js config
 new WOW().init();
