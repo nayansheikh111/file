@@ -12,7 +12,7 @@ body {
 }
 
 /*===========================
-Scrool Bar CSS
+Scrool Bar CSS Start
 =============================*/
 html {
   --scrollbarBG: #ecdede;
@@ -39,13 +39,45 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*===========================
-Scrool Bar CSS
+Scrool Bar CSS End
 =============================*/
 .header_bottom_shape_style {
   background: #6FB048;
   height: 2px;
   width: 70px;
   display: block;
+}
+
+.btn_custom_one {
+  color: #fff !important;
+  background-color: #6FB048;
+  border-radius: 2px;
+  padding: 5px 25px;
+}
+
+.btn_custom_one:hover {
+  background-color: #83a7a5;
+}
+
+.btn_custom_one:focus, .btn_custom.focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.btn_custom_two {
+  color: #fff !important;
+  background-color: #83a7a5;
+  border-radius: 2px;
+  padding: 5px 25px;
+}
+
+.btn_custom_two:hover {
+  background-color: #6FB048;
+}
+
+.btn_custom_two:focus, .btn_custom.focus {
+  outline: 0;
+  box-shadow: none;
 }
 
 #headerArea {
@@ -72,8 +104,30 @@ Scrool Bar CSS
   z-index: -1;
 }
 
-#headerArea .fixed-top {
+.fixed-top {
   background-color: #0f5f5c;
+}
+
+.navbar .navbar-brand {
+  font-weight: 700;
+}
+
+.navbar .navbar-brand .navbar_number {
+  font-size: .7rem;
+  font-weight: 600;
+  border-left: 1px solid #fff;
+}
+
+.navbar .navbar-brand .navbar_number img {
+  width: 15px;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-item .nav-link {
+    color: #fff;
+    padding-right: .75rem;
+    padding-left: .75rem;
+  }
 }
 
 #feature_section .row .feature_header h2 {
@@ -115,7 +169,7 @@ Scrool Bar CSS
 }
 
 #profile_section .profile_client_name {
-  color: #6fb048;
+  color: #6FB048;
   font-weight: bold;
   margin-top: 1rem;
 }
@@ -212,15 +266,48 @@ Scrool Bar CSS
 
 #footer_section .row .col ul li a {
   text-decoration: none;
-}
-
-#footer_section .row .col ul li a:first-child {
   color: #0f5f5cd2;
-  font-weight: 700;
-  font-size: 0.8125rem;
 }
 
-#spece_section {
-  height: 300px;
-  background: #666;
+#footer_section .row .col ul li .website_link {
+  font-weight: 700;
+}
+
+#footer_section .row .col form .input-group input {
+  border: 0;
+  padding: 10px 15px;
+  height: auto;
+  background-color: #eef1ec;
+}
+
+#footer_section .row .col form .input-group .input-group-prepend .input-group-text {
+  padding: 0;
+  background-color: #eef1ec;
+  border: 0;
+}
+
+#footer_section .row .col form .input-group .input-group-prepend .input-group-text button {
+  padding: 10px 15px;
+  border: 0;
+  background-color: #eef1ec;
+  outline: none;
+}
+
+#footer_section .row .col form .input-group .input-group-prepend .input-group-text button svg {
+  width: 18px;
+  height: auto;
+  fill: #6FB048;
+}
+
+#footer_section .copyright_aria {
+  border-top: 1px solid #0f5f5cd2;
+}
+
+#footer_section .copyright_aria p {
+  font-size: .75rem;
+}
+
+#footer_section .copyright_aria ul li {
+  width: 30px;
+  margin: 5px;
 }

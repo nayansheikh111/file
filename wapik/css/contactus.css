@@ -1,0 +1,48 @@
+#headerArea {
+  background-image: url(../img/ContactUs_map.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  min-height: 500px;
+  position: relative;
+  z-index: 1;
+}
+
+#headerArea .row {
+  align-items: center;
+  min-height: 500px;
+}
+
+#headerArea .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: none;
+  z-index: -1;
+}
+
+.fixed-top {
+  background-color: #ffffff;
+}
+
+.navbar .navbar-brand {
+  color: #0f5f5cd2;
+}
+
+.navbar .navbar-brand:hover {
+  color: #0f5f5cd2 !important;
+}
+
+.navbar .navbar-brand .navbar_number {
+  border-left: 1px solid #0f5f5cd2;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-item .nav-link {
+    color: #0f5f5cd2;
+  }
+}
+
+#contactUs_section h3 {
+  font-weight: 400;
+}

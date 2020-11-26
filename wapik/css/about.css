@@ -1,0 +1,37 @@
+#headerArea {
+  color: #fff;
+  background-image: url(../img/about_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  min-height: 500px;
+  position: relative;
+  z-index: 1;
+}
+
+#headerArea .row {
+  align-items: center;
+  min-height: 500px;
+}
+
+#headerArea .overlay {
+  background: #0f5f5cd2;
+}
+
+#headerArea h3 {
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+#download_section {
+  background: url(../img/app/app_download_section_bg_about.png);
+  color: #ffffff;
+}
+
+#download_section .btn_custom_one {
+  background-color: #37681b;
+}
+
+#download_section .btn_custom_one:hover {
+  background-color: #0f5f5cd2;
+}

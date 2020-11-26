@@ -1,10 +1,16 @@
+
 $primary-color: #0f5f5cd2;
+$secend-color: #6FB048;
+$therd-color: #ffffff;
 
 
 *{
     margin: 0;
     padding: 0;
 }
+
+
+
 body{
     margin: 0;
     padding: 0;
@@ -16,7 +22,7 @@ body{
 }
 
 /*===========================
-Scrool Bar CSS
+Scrool Bar CSS Start
 =============================*/
 html {
     --scrollbarBG: #ecdede;
@@ -38,20 +44,52 @@ html {
     border: 3px solid var(--scrollbarBG);
   }
 /*===========================
-Scrool Bar CSS
+Scrool Bar CSS End
 =============================*/
-
 // Common Css
 .header_bottom_shape_style{
-    background: #6FB048;
+    background: $secend-color;
     height: 2px;
     width: 70px;
     display: block;
     
 }
+        // Custom Button CSS Start
 
+// btn_custom_one
+.btn_custom_one{
+    color: #fff !important;
+    background-color: #6FB048;
+    border-radius: 2px;
+    padding: 5px 25px;
+
+}
+.btn_custom_one:hover {
+    background-color: #83a7a5;
+  }
+.btn_custom_one:focus, .btn_custom.focus {
+    outline: 0;
+    box-shadow: none;
+  }
+// btn_custom_two
+  .btn_custom_two{
+    color: #fff !important;
+    background-color: #83a7a5;
+    border-radius: 2px;
+    padding: 5px 25px;
+
+}
+.btn_custom_two:hover {
+    background-color: #6FB048;
+  }
+.btn_custom_two:focus, .btn_custom.focus {
+    outline: 0;
+    box-shadow: none;
+  }
+          // Custom Button CSS End
 
 // Common Css
+
 // Header Section Css Start
 #headerArea{
     color: #fff;
@@ -76,11 +114,51 @@ Scrool Bar CSS
         background: $primary-color;
         z-index: -1;
     }
-    .fixed-top{
-        background-color: #0f5f5c;
-    }
 }
+
+.fixed-top{
+    background-color: #0f5f5c;
+}
+
+
 // Header Section Css Start
+// Navbar Css Start
+.navbar{
+    .navbar-brand{
+        font-weight: 700;
+        .navbar_number{
+            font-size: .7rem;
+            font-weight: 600;
+            border-left: 1px solid #fff;
+            // margin-left: 15px;
+            // padding-left: 15px;
+            img{
+                width: 15px;
+            }
+        }
+    }
+    
+}
+
+// Navbar media
+@media (min-width: 992px){
+    .navbar-expand-lg{
+        .navbar-nav{
+            .nav-item{
+                
+                .nav-link{
+                    color: #fff;
+                    padding-right: .75rem;
+                    padding-left: .75rem;
+                }
+            }
+        }
+    }
+
+}
+        // Nav Section End
+
+
 // Feature Section Css Start
 #feature_section{
     .row{
@@ -139,7 +217,7 @@ Scrool Bar CSS
         font-size: .87rem;
     }
     .profile_client_name{
-        color: #6fb048;
+        color: $secend-color;
         font-weight: bold;
         margin-top: 1rem;
     }
@@ -197,7 +275,7 @@ Scrool Bar CSS
                     margin: 0;
                     font-size: 0.93rem;
                     font-weight: 700;
-                    color: #6FB048;
+                    color: $secend-color;
                 }
                 h4{
                     font-size: 4rem;
@@ -234,7 +312,7 @@ Scrool Bar CSS
     .row{
         .col{
             h4{
-                color: #6FB048;
+                color: $secend-color;
             }
             a{
                 font-weight: 700;
@@ -265,36 +343,59 @@ Scrool Bar CSS
                     
                     a{
                         text-decoration: none;
-                        &:first-child{
-                            color: $primary-color;
-                            font-weight: 700;
-                            font-size: 0.8125rem;
-                        }
+                        color: $primary-color;
+                    }
+                    .website_link{
+                        font-weight: 700;
                     }
                 }
+            }
+            form{
+                .input-group{
+                    input{
+                        border: 0;
+                        padding: 10px 15px;
+                        height: auto;                        
+                        background-color: #eef1ec;
+                        
+                    }
+                    
+                    .input-group-prepend{
+                        .input-group-text{
+                            padding: 0;
+                            background-color: #eef1ec;
+                            border: 0;
+                            button{
+                                padding: 10px 15px;
+                                border: 0;
+                                background-color: #eef1ec;
+                                outline: none;
+                                
+                                svg{                          
+                                width:18px;
+                                height:auto;    
+                                fill:$secend-color;                  
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    .copyright_aria{
+        border-top: 1px solid $primary-color;
+        p{
+            font-size: .75rem;
+        }
+        ul{
+            li{
+                width: 30px;
+                margin: 5px;
             }
         }
     }
 }
 // Footer Section Css End
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#spece_section{
-    height: 300px;
-    background: #666;
-}
