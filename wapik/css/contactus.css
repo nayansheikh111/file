@@ -21,10 +21,6 @@
   z-index: -1;
 }
 
-.fixed-top {
-  background-color: #ffffff;
-}
-
 .navbar .navbar-brand {
   color: #0f5f5cd2;
 }
@@ -45,4 +41,41 @@
 
 #contactUs_section h3 {
   font-weight: 400;
+}
+
+#contactUs_section .contactUs_form_detials {
+  border: 1px dashed #888;
+  width: 70%;
+  overflow: hidden;
+}
+
+#contactUs_section .contactUs_form_detials h4 {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #0f5f5cd2;
+}
+
+#contactUs_section .contactUs_form_detials ul li {
+  color: #888;
+}
+
+#contactUs_section .contactUs_form_detials ul li i {
+  color: #6FB048;
+}
+
+#contactUs_section .contactUs_form_detials ul li a {
+  color: #0f5f5cd2;
+  font-weight: 600;
+}
+
+@media (max-width: 575px) {
+  .contactUs_form_detials {
+    width: 80%;
+  }
+  h4 {
+    font-size: 1.1rem;
+  }
+  ul li {
+    font-size: .8rem;
+  }
 }

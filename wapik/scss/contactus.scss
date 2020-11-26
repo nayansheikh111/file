@@ -28,10 +28,10 @@ $therd-color: #ffffff;
         z-index: -1;
     }
 }
-
-.fixed-top{
-    background-color: #ffffff;
-}
+// This fixed-top class frize for used bg-light class
+// .fixed-top{
+//     background-color: #ffffff;
+// }
 
 
 // Header Section Css Start
@@ -66,5 +66,40 @@ $therd-color: #ffffff;
 #contactUs_section{
     h3{
         font-weight: 400;
+    }
+    .contactUs_form_detials{
+        border: 1px dashed #888;
+        width: 70%;
+        overflow: hidden;
+        h4{
+            font-weight: 400;
+            font-size: 1.4rem;
+            color: $primary-color;
+        }
+        ul{
+            li{
+                color: #888;
+                i{
+                    color: $secend-color;
+                }
+                a{
+                    color: $primary-color;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 575px) {    
+    .contactUs_form_detials{
+        width: 80%;
+    }
+    h4{
+        font-size: 1.1rem;
+    }
+    ul{
+        li{
+            font-size: .8rem;
+        }
     }
 }
