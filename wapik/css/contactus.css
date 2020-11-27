@@ -69,10 +69,10 @@
 }
 
 @media (max-width: 575px) {
-  .contactUs_form_detials {
+  #contactUs_section .contactUs_form_detials {
     width: 80%;
   }
-  h4 {
-    font-size: 3.1rem;
+  #contactUs_section .contactUs_form_detials h4 {
+    font-size: 1.1rem;
   }
 }
