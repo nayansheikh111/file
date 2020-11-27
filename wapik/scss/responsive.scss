@@ -134,6 +134,15 @@
 
 ///////////    max-width 575px
 @media (max-width: 575px) {
+    // Navbar Css
+    .navbar-nav{
+        .nav-item{
+            
+            .nav-link{
+                font-size: .8rem;
+            }
+        }
+    }
     // Price & Plan Section
 #price_plan_section{
     .price_plan_row{

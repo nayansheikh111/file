@@ -69,6 +69,9 @@
 }
 
 @media (max-width: 575px) {
+  .navbar-nav .nav-item .nav-link {
+    font-size: .8rem;
+  }
   #price_plan_section .price_plan_row .price_plan ul li h4 {
     font-size: 2rem;
   }
