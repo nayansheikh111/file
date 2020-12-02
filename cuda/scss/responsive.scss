@@ -1,0 +1,54 @@
+@media (max-width: 1200px){}
+
+@media (max-width: 991px){
+    // Team Section
+#team_section{
+    .row{
+        .card{
+            margin-bottom: 1rem;
+            .card_img{
+                width: 9rem;
+                height: 9rem;
+                margin: auto;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+        }
+    }
+}
+}
+
+@media (max-width: 767px){
+    // Common Css
+    .btn_custom{
+        padding: 10px 40px;
+    }
+        // Service Section
+#service_section{
+    .row{
+        .col{
+            .card{
+                .card_img{
+                    height: 100px;
+                    img{
+                        width: 70px;
+                    }  
+                }
+                .card-body{
+                    line-height: 1.2;
+                    .card-title{
+                        font-size: 1rem;
+                        font-weight: 600 !important;
+                    }
+                    .card-text{
+                        font-size: .9rem;
+                    }
+                }                
+            }
+        }
+    }
+}
+
+}
+
+@media (max-width: 575px){}

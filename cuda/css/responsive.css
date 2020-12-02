@@ -1,0 +1,34 @@
+@media (max-width: 991px) {
+  #team_section .row .card {
+    margin-bottom: 1rem;
+  }
+  #team_section .row .card .card_img {
+    width: 9rem;
+    height: 9rem;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 767px) {
+  .btn_custom {
+    padding: 10px 40px;
+  }
+  #service_section .row .col .card .card_img {
+    height: 100px;
+  }
+  #service_section .row .col .card .card_img img {
+    width: 70px;
+  }
+  #service_section .row .col .card .card-body {
+    line-height: 1.2;
+  }
+  #service_section .row .col .card .card-body .card-title {
+    font-size: 1rem;
+    font-weight: 600 !important;
+  }
+  #service_section .row .col .card .card-body .card-text {
+    font-size: .9rem;
+  }
+}
