@@ -78,7 +78,8 @@ h1 {
 }
 
 #service_section .row .col {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #service_section .row .col .card {
@@ -88,7 +89,8 @@ h1 {
 
 #service_section .row .col .card .card_img {
   height: 150px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   overflow: hidden;
 }
 
